@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Records.css" type="text/css"?>
+
+<!--
+      
+      Author:          Garry Daly
+
+      Created:         January 21, 2019
+      Last Modified:   January 21, 2019  
+
+      Filename:         Records.xml
+      Supporting files: Records.css
+                        record.jpg
+                        
+      Description:      This is the xml file for displaying a record collection.  
+                        The data was originally imported from an Excel file which 
+                        was exported to a .csv file.
+-->
+
+<Discography>
+	<Album Artist="Mark Ronson Featuring Bruno Mars">
+		<Track>
+			<Name>
+				Uptown Funk!
+			</Name>
+			<Length>
+				4:30
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Mark Ronson Featuring Bruno Mars">
+		<Track>
+			<Name>
+				Thinking Out Loud
+			</Name>
+			<Length>
+				4:41
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Wiz Khalifa Featuring Charlie Puth">
+		<Track>
+			<Name>
+				See You Again
+			</Name>
+			<Length>
+				3:49
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Fetty Wap">
+		<Track>
+			<Name>
+				Trap Queen
+			</Name>
+			<Length>
+				3:42
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Maroon 5">
+		<Track>
+			<Name>
+				Sugar
+			</Name>
+			<Length>
+				3:55
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Walk the Moon">
+		<Track>
+			<Name>
+				Shut Up And Dance
+			</Name>
+			<Length>
+				3:19
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Taylor Swift">
+		<Track>
+			<Name>
+				Blank Space
+			</Name>
+			<Length>
+				3:51
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Silento">
+		<Track>
+			<Name>
+				Watch Me
+			</Name>
+			<Length>
+				3:05
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="The Weekend">
+		<Track>
+			<Name>
+				Earned It
+			</Name>
+			<Length>
+				3.40
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="The Weekend">
+		<Track>
+			<Name>
+				The Hills
+			</Name>
+			<Length>
+				4:37
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="OMI">
+		<Track>
+			<Name>
+				The Cheerleader
+			</Name>
+			<Length>
+				3:00
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="The Weekend">
+		<Track>
+			<Name>
+				Can't Feel My Face
+			</Name>
+			<Length>
+				3:33
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Ellie Goulding">
+		<Track>
+			<Name>
+				Love Me Like You Do
+			</Name>
+			<Length>
+				4:10
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Hozier">
+		<Track>
+			<Name>
+				Take Me To Church
+			</Name>
+			<Length>
+				4:01
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Taylor Swift">
+		<Track>
+			<Name>
+				Bad Blood
+			</Name>
+			<Length>
+				3:31
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Major Lazer and DJ Snake">
+		<Track>
+			<Name>
+				Lean On
+			</Name>
+			<Length>
+				2:56
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Jason Derulo">
+		<Track>
+			<Name>
+				Want To Want Me
+			</Name>
+			<Length>
+				3:27
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Taylor Swift">
+		<Track>
+			<Name>
+				Shake It Off
+			</Name>
+			<Length>
+				3:39
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Skrillex and Diplo">
+		<Track>
+			<Name>
+				Where Are U Now
+			</Name>
+			<Length>
+				4:10
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Rachel Platten">
+		<Track>
+			<Name>
+				Fight Song
+			</Name>
+			<Length>
+				3:24
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Fetty Wap">
+		<Track>
+			<Name>
+				679
+			</Name>
+			<Length>
+				3:16
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Meghan Trainor">
+		<Track>
+			<Name>
+				Lips Are Movin
+			</Name>
+			<Length>
+				3:02
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Fifth Harmony">
+		<Track>
+			<Name>
+				Worth It
+			</Name>
+			<Length>
+				3:44
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Omarion">
+		<Track>
+			<Name>
+				Post To Be
+			</Name>
+			<Length>
+				3:46
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Andy Grammer">
+		<Track>
+			<Name>
+				Honey I'm Good
+			</Name>
+			<Length>
+				3:19
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Sam Smith">
+		<Track>
+			<Name>
+				I'm Not The Only One
+			</Name>
+			<Length>
+				3:59
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Selena Gomez">
+		<Track>
+			<Name>
+				Good For You
+			</Name>
+			<Length>
+				3:41
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Meghan Trainor">
+		<Track>
+			<Name>
+				All About That Bass
+			</Name>
+			<Length>
+				3:08
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Taylor Swift">
+		<Track>
+			<Name>
+				Style
+			</Name>
+			<Length>
+				3:51
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Drake">
+		<Track>
+			<Name>
+				Hotline Bling
+			</Name>
+			<Length>
+				4:27
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="David Guetta">
+		<Track>
+			<Name>
+				Hey Mama
+			</Name>
+			<Length>
+				5:04
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Flo Rida">
+		<Track>
+			<Name>
+				G.D.F.R
+			</Name>
+			<Length>
+				3:10
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Justin Bieber">
+		<Track>
+			<Name>
+				What Do You Mean
+			</Name>
+			<Length>
+				3:23
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Ed Sheeran">
+		<Track>
+			<Name>
+				Photograph
+			</Name>
+			<Length>
+				4:18
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Adele">
+		<Track>
+			<Name>
+				Hello
+			</Name>
+			<Length>
+				4:55
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Shawn Mendes">
+		<Track>
+			<Name>
+				Stiches
+			</Name>
+			<Length>
+				3:38
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Tove Lo">
+		<Track>
+			<Name>
+				Talking Body
+			</Name>
+			<Length>
+				3:58
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Nick Jonas">
+		<Track>
+			<Name>
+				Jealous
+			</Name>
+			<Length>
+				3.40
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Pitbull and Ne-Yo">
+		<Track>
+			<Name>
+				Time Of Our Lives
+			</Name>
+			<Length>
+				3:49
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="R. City">
+		<Track>
+			<Name>
+				Locked Away
+			</Name>
+			<Length>
+				3:47
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Natalie La Rose">
+		<Track>
+			<Name>
+				Somebody
+			</Name>
+			<Length>
+				3.40
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Rhianna and Kanye West">
+		<Track>
+			<Name>
+				FourFiveSeconds
+			</Name>
+			<Length>
+				3:08
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Fall Out Boy">
+		<Track>
+			<Name>
+				Centuries
+			</Name>
+			<Length>
+				3:48
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Fetty Wap">
+		<Track>
+			<Name>
+				My Way
+			</Name>
+			<Length>
+				3:33
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Sam Hunt">
+		<Track>
+			<Name>
+				Take your Time
+			</Name>
+			<Length>
+				4:03
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Maroon 5">
+		<Track>
+			<Name>
+				Animals
+			</Name>
+			<Length>
+				3:51
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Big Sean">
+		<Track>
+			<Name>
+				I Don't F--- With You
+			</Name>
+			<Length>
+				4:44
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Rihanna">
+		<Track>
+			<Name>
+				B---- Better Have My Money
+			</Name>
+			<Length>
+				3:39
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Rich Homie Quan">
+		<Track>
+			<Name>
+				Flex
+			</Name>
+			<Length>
+				2:56
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="T-Wayne">
+		<Track>
+			<Name>
+				Nasty Freestyle
+			</Name>
+			<Length>
+				2:22
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="Nicki Minaj">
+		<Track>
+			<Name>
+				Only
+			</Name>
+			<Length>
+				5:12
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Sia">
+		<Track>
+			<Name>
+				Elastic Heart
+			</Name>
+			<Length>
+				4:17
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Demi Lovato">
+		<Track>
+			<Name>
+				Cool For The Summer
+			</Name>
+			<Length>
+				3:34
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="X Ambassadors">
+		<Track>
+			<Name>
+				Renegades
+			</Name>
+			<Length>
+				3:15
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Usher">
+		<Track>
+			<Name>
+				I Don't Mind
+			</Name>
+			<Length>
+				4:11
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Ariana Grande">
+		<Track>
+			<Name>
+				Love Me Harder
+			</Name>
+			<Length>
+				3:56
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Taylor Swift">
+		<Track>
+			<Name>
+				Wildest Dreams
+			</Name>
+			<Length>
+				3:40
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Sam Smith">
+		<Track>
+			<Name>
+				Stay With Me
+			</Name>
+			<Length>
+				2:52
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="DJ Snake and AlunaGeorge">
+		<Track>
+			<Name>
+				You Know You Like It
+			</Name>
+			<Length>
+				4:07
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Fall Out Boy">
+		<Track>
+			<Name>
+				Uma Thurman
+			</Name>
+			<Length>
+				3:31
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Beyonce">
+		<Track>
+			<Name>
+				7/11
+			</Name>
+			<Length>
+				3:33
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Selena Gomez">
+		<Track>
+			<Name>
+				The Heart Wants What It Wants
+			</Name>
+			<Length>
+				3:47
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Little Big Town">
+		<Track>
+			<Name>
+				Girl Crush
+			</Name>
+			<Length>
+				3:13
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Trey Songz">
+		<Track>
+			<Name>
+				Slow Motion
+			</Name>
+			<Length>
+				3:17
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="One Direction">
+		<Track>
+			<Name>
+				Drag Me Down
+			</Name>
+			<Length>
+				3:12
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Nicki Minaj">
+		<Track>
+			<Name>
+				Truffle Butter
+			</Name>
+			<Length>
+				3:39
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Ariana Grande">
+		<Track>
+			<Name>
+				One Last Time
+			</Name>
+			<Length>
+				3:17
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Nick Jonas">
+		<Track>
+			<Name>
+				Chains
+			</Name>
+			<Length>
+				3:23
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Meek Mill">
+		<Track>
+			<Name>
+				All Eyes On You
+			</Name>
+			<Length>
+				3:43
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Rae Sremmurd">
+		<Track>
+			<Name>
+				No Type
+			</Name>
+			<Length>
+				3:20
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Vance Joy">
+		<Track>
+			<Name>
+				Riptide
+			</Name>
+			<Length>
+				3:24
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Jidenna">
+		<Track>
+			<Name>
+				Classic Man
+			</Name>
+			<Length>
+				3:46
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Elle King">
+		<Track>
+			<Name>
+				Ex's and Oh's
+			</Name>
+			<Length>
+				3:22
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Meghan Trainor">
+		<Track>
+			<Name>
+				Dear Future Husband
+			</Name>
+			<Length>
+				3:04
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Charlie Puth">
+		<Track>
+			<Name>
+				Marvin Gaye
+			</Name>
+			<Length>
+				3:10
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Meghan Trainor">
+		<Track>
+			<Name>
+				Like I'm Gonna Lose You
+			</Name>
+			<Length>
+				3:45
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Tove Lo">
+		<Track>
+			<Name>
+				Habits
+			</Name>
+			<Length>
+				4:18
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="James Newton Howard">
+		<Track>
+			<Name>
+				The Hanging Tree
+			</Name>
+			<Length>
+				3:38
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="O.T. Genasis">
+		<Track>
+			<Name>
+				CoCo
+			</Name>
+			<Length>
+				3:59
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Jessie and Ariana Grande">
+		<Track>
+			<Name>
+				Bang Bang
+			</Name>
+			<Length>
+				3:19
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Sam Smith">
+		<Track>
+			<Name>
+				Lay Me Down
+			</Name>
+			<Length>
+				4:13
+			</Length>
+		</Track>
+	</Album>
+	<Album Artist="ILoveMakonnen">
+		<Track>
+			<Name>
+				Tuesday
+			</Name>
+			<Length>
+				5:21
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="iLoveMemphis">
+		<Track>
+			<Name>
+				Hit The Quan
+			</Name>
+			<Length>
+				3:01
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Macklemore and Ryan Lewis">
+		<Track>
+			<Name>
+				Downtown
+			</Name>
+			<Length>
+				4:52
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Sam Hunt">
+		<Track>
+			<Name>
+				House Party
+			</Name>
+			<Length>
+				3:10
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Chris Brown and Tyga">
+		<Track>
+			<Name>
+				Ayo
+			</Name>
+			<Length>
+				3:45
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Luke Bryan">
+		<Track>
+			<Name>
+				Kick Up The Dust
+			</Name>
+			<Length>
+				3:10
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Big Sean">
+		<Track>
+			<Name>
+				Blessings
+			</Name>
+			<Length>
+				4:12
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="George Erza">
+		<Track>
+			<Name>
+				Budapest
+			</Name>
+			<Length>
+				3:20
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Sia">
+		<Track>
+			<Name>
+				Chandelier
+			</Name>
+			<Length>
+				3:36
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Kelly Clarkson">
+		<Track>
+			<Name>
+				Heartbeat Song
+			</Name>
+			<Length>
+				3:18
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Ed Sheeran">
+		<Track>
+			<Name>
+				Don't
+			</Name>
+			<Length>
+				3:39
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Ella Henderson">
+		<Track>
+			<Name>
+				Ghost
+			</Name>
+			<Length>
+				3:36
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Alessia Cara">
+		<Track>
+			<Name>
+				Here
+			</Name>
+			<Length>
+				3:19
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Mr. Probz">
+		<Track>
+			<Name>
+				Waves
+			</Name>
+			<Length>
+				2:54
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Nicky Jam">
+		<Track>
+			<Name>
+				El Perdon
+			</Name>
+			<Length>
+				3:25
+			</Length>
+		</Track>
+	</Album>	
+	<Album Artist="Ne-Yo">
+		<Track>
+			<Name>
+				She Knows
+			</Name>
+			<Length>
+				3:34
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="One Direction">
+		<Track>
+			<Name>
+				Night Changes
+			</Name>
+			<Length>
+				3:46
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Drake">
+		<Track>
+			<Name>
+				Back To Back
+			</Name>
+			<Length>
+				2:50
+			</Length>
+		</Track>
+	</Album>		
+	<Album Artist="Calvin Harris and Diciples">
+		<Track>
+			<Name>
+				How Deep Is Your Love
+			</Name>
+			<Length>
+				3:32
+			</Length>
+		</Track>
+	</Album>		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+</Discography>

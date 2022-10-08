@@ -1,0 +1,8 @@
+body
+{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #2d035c;
+  
+}

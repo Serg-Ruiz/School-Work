@@ -1,0 +1,106 @@
+/*
+      Garry Daly's Programing Assignment 3
+      
+      Author:          Garry Daly
+
+      Created:         January 21, 2019
+      Last Modified:   January 21, 2019 
+
+      Filename:         Records.xml
+      Supporting files: Records.css
+                        record.jpg
+                        TrackName.png
+                        TrackLength.png
+                        
+      Description:      This is the css file supporting the xml file for
+                        displaying a record collection.  The data was originally
+                        imported from an Excel file which was exported to a .csv file.
+*/
+
+* {
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+  display: inline;
+  font-weight: normal;
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+}
+
+
+
+Discography:before {
+  content: "Top 100 Songs of 2015";
+  counter-reset: recnum;
+}
+
+Discography {
+  font-size: 24pt;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #fff340;
+  background: url('record.jpg');
+  background-attachment: fixed;
+  display: block;
+  text-align: center; 
+}
+
+Album:before {
+	content: counter(recnum) ". " attr(Artist); 
+	counter-increment: recnum;
+}
+
+/* Album:before {content: "Album Name: " attr(Artist); } */
+
+Album {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 600px;
+  height: 70px;
+  background-color: #fff340;
+  font-size: 16pt;
+  font-weight: bold;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  color: green;
+  text-align: left;
+  letter-spacing: 0px;
+  -moz-box-shadow: 6px 6px 8px #000; 
+  -webkit-box-shadow: 6px 6px 8px #000; 
+  box-shadow: 6px 6px 8px #000;
+}
+
+Track {
+  padding: 10px;
+  margin: 11px 10px 10px 10px;
+  width: 600px;
+  -moz-border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 25px px 25px;
+  margin-left: -10px;
+  background-color: green;
+  letter-spacing: 0px;
+  display: block ;
+}
+
+
+Track Name:before {content: url('TrackName.png');}
+Track Name {
+  display: inline-block;
+  color: #fff340;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14pt;
+}
+
+
+Track Length:before {content: url('TrackLength.png');}
+Track Length {
+  display: block;
+  color: #fff340;
+  font-size: 14pt;
+  text-align: right;
+  margin-top: -20px;
+  text-align: right;
+}
