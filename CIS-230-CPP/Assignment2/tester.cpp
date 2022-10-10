@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-void print_obj(const PersonName& param);
+void print_obj(int size, PersonName ptr_arr[]);
 
 int main () 
 {
@@ -21,7 +21,7 @@ int main ()
 
 	} while (numOfStudents < 1 || numOfStudents > 5);
 
-	PersonName* ptr_arr = new PersonName[numOfStudents];
+	PersonName *ptr_arr = new PersonName[numOfStudents];
 
 	for (int count = 1; count <= numOfStudents; count++)
 	{
@@ -36,18 +36,19 @@ int main ()
 		ptr_arr[array_index].setLa_name(lastName);
 		array_index++;
 	}
+	
+	
+	print_obj(numOfStudents, ptr_arr);
+	
 
-
-	for (int i=0; i < numOfStudents;i++)
-	{
-		print_obj(ptr_arr[i]);
-	}
-
-	delete[] new PersonName;
+	delete[] ptr_arr;
 
 	return 0;
 }
-void print_obj(const PersonName& param)
-{
-		cout << param.to_string() << endl;
+void print_obj(int size, PersonName ptr_arr[]) 
+{	
+	for (int i = 0; i < size; i++) 
+	{
+		cout << ptr_arr[i].to_string() << endl;
+	}
 }
