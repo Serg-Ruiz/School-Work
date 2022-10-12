@@ -10,7 +10,8 @@
       Filename: project06-05.js
 */
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function ()
+{
    // Calculate the shopping cart when the page loads
    calcCart();
    
@@ -18,29 +19,34 @@ window.addEventListener("load", function() {
    document.getElementById("regSubmit").click = sessionTest;   
    
    // Recalculate the shopping chart when any field loses the focus
-   document.getElementById("fnBox").blur = calcCart;
-   document.getElementById("lnBox").blur = calcCart; 
-   document.getElementById("groupBox").blur = calcCart;   
-   document.getElementById("mailBox").blur = calcCart;   
-   document.getElementById("phoneBox").blur = calcCart;   
-   document.getElementById("sessionBox").change = calcCart;   
-   document.getElementById("banquetBox").blur = calcCart; 
-   document.getElementById("mediaCB").click = calcCart;   
-});
+   document.getElementById("fnBox").addEventListener("blur", calcCart);
+   document.getElementById("lnBox").addEventListener("blur", calcCart);
+   document.getElementById("groupBox").addEventListener("blur", calcCart);
+   document.getElementById("mailBox").addEventListener("blur", calcCart);
+   document.getElementById("phoneBox").addEventListener("blur", calcCart);
+   document.getElementById("sessionBox").addEventListener("change", calcCart);   
+   document.getElementById("banquetBox").addEventListener("blur", calcCart);
+   document.getElementById("mediaCB").addEventListener("click", calcCart);   
+})
 
 
 // Function to verify that a session was selected by the user
-function sessionTest() {
-   var confSession = document.getElementById("sessionBox");
-   if (confSession.selectedIndex === -1) {
+function sessionTest() 
+{
+   let confSession = document.getElementById("sessionBox");
+   if (confSession.selectedIndex != -1)
+    {
       confSession.setValidity("Select a Session Package");
-   } else {
+    }
+    else 
+   {
       confSession.setValidity("");
    }
 }
 
 // Function to calculate the shopping cart total
-function calcCart() {
+function calcCart() 
+{
    
    // Calculate the banquet cost for all guests 
    let guestCost = document.forms.register.elements.banquetGuests.value*55;
@@ -54,7 +60,8 @@ function calcCart() {
    let selectedSession = document.getElementById("sessionBox").index;
    
    // Retrieve the name and cost of the selected session  
-   if (selectedSession !== -1) {
+   if (selectedSession !== -1) 
+   {
       sessionChoice = document.forms.register.elements.sessionBox[selectedSession].text;
       sessionCost = document.forms.register.elements.sessionBox[selectedSession].value;
    }
@@ -64,7 +71,7 @@ function calcCart() {
    let mediaChoice = "";   // Initial media choice
    
    // If the user selects the media pack, update the choice and cost
-   if (document.forms.register.elements.mediaCB.check) {
+   if (document.forms.register.elements.mediaCB.checked) {
       mediaChoice = "yes";
       mediaCost = 115;
    }
@@ -81,5 +88,5 @@ function calcCart() {
    document.getElementById("regSession").textContent = sessionChoice;
    document.getElementById("regBanquet").textContent = document.forms.register.elements.banquetGuests.value; 
    document.getElementById("regPack").textContent = mediaChoice;
-   document.getElementById("regTotal").textContent = totalCost.toLocaleString("en-US", style: "currency", currency: "USD");
+   document.getElementById("regTotal").textContent = totalCost.toLocaleString("en-US", "style:", "currency", "currency:", "USD");
 }
