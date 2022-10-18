@@ -34,15 +34,29 @@ int main()
 
 string get_only_alpha(const string& param)
 {
-    string ret_val = "";
-     //Complete code 
+         //Complete code 
+    string ret_val = param;
+
+    transform(ret_val.begin(), ret_val.end(), ret_val.begin(), ::tolower);
+
+    int count =0;
+
+    for (int i=0; i < ret_val[i]; i++)
+            if (ret_val[i] != ' ')
+            ret_val[count++] = ret_val[i]; 
+                                  
+    ret_val[count] = '\0';
+
 	return ret_val;
 }
 
 string get_lowercase_version(const string &param)
 {
-    string return_value = "";
+    string return_value = param;
     //Complete code 
+
+    transform(return_value.begin(), return_value.end(), return_value.begin(), ::tolower);
+
 	return return_value;
 }
 
