@@ -39,15 +39,19 @@ string get_only_alpha(const string& param)
 
     transform(ret_val.begin(), ret_val.end(), ret_val.begin(), ::tolower);
 
-    int count =0;
+    for (int i=0; i < ret_val.length(); i++)
+    {
+        if (ispunct(ret_val[i]))
+        {
+            ret_val.erase(i--, 1);
+        }
+    }
 
-    for (int i=0; i < ret_val[i]; i++)
-            if (ret_val[i] != ' ')
-            ret_val[count++] = ret_val[i]; 
-                                  
-    ret_val[count] = '\0';
+    ret_val.erase(std::remove_if(ret_val.begin(), ret_val.end(), ::isspace),
+            ret_val.end());
 
-	return ret_val;
+    return ret_val;
+
 }
 
 string get_lowercase_version(const string &param)
@@ -56,6 +60,14 @@ string get_lowercase_version(const string &param)
     //Complete code 
 
     transform(return_value.begin(), return_value.end(), return_value.begin(), ::tolower);
+
+    for (int i=0; i < return_value.length(); i++)
+    {
+        if (ispunct(return_value[i]))
+        {
+            return_value.erase(i--, 1);
+        }
+    }
 
 	return return_value;
 }
