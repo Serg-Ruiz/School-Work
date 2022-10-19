@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+#include <algorithm>
 using namespace std;
 #include "Asn4_String.h"
 string get_lowercase_version(const string &param);
