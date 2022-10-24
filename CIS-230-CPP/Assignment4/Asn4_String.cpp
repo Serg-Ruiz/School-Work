@@ -1,15 +1,12 @@
 #include "Asn4_String.h"
-
 Asn4_String::Asn4_String(string param)
 {
     set_string(param);
 }
-
 //Function that overloads the stream insertion operator
 //{
 	//Complete it!
 //}
-
 ostream& operator<<(ostream& output,Asn4_String& obj)
 {
     string message;
@@ -42,12 +39,27 @@ bool Asn4_String::is_palindrome(string param) const
 bool Asn4_String::check_pd(string param, int start_index, int end_index) const
 {
 	//Complete it!
-    for (int i=0; i< end_index; i++)
+    if (param == "")
     {
-        if (param[i] != param[param.length() - i - 1])
-            return false;
+        return true;
     }
-    
-    return true;
-
+    if(isupper(param[start_index]) && islower(param[end_index]))
+    {
+        return false;
+    }
+    if (end_index - start_index == 1 || start_index == end_index)
+    {
+        return true;
+    }
+    else
+    {
+        if(param[start_index] == param[end_index])
+        {
+            return check_pd(param,start_index + 1, end_index -1);
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

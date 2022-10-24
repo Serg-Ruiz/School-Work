@@ -52,14 +52,12 @@ string get_only_alpha(const string& param)
             ret_val.end());
 
     return ret_val;
-
 }
 
 string get_lowercase_version(const string &param)
 {
     string return_value = param;
     //Complete code 
-
     transform(return_value.begin(), return_value.end(), return_value.begin(), ::tolower);
 
     for (int i=0; i < return_value.length(); i++)
