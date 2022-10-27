@@ -4,8 +4,8 @@
       Project 08-04
 
       Retrieve Staff Data from a JSON File
-      Author: 
-      Date:   
+      Author: Sergio Ruiz
+      Date:   October 23,2022
 
       Filename: project08-04.js
 */
@@ -25,13 +25,27 @@ getFileButton.onchange = function() {
    // Once the file has finished loading, parse the JSON file
    fr.onload=function(){ 
 
+      fr.result  = new staff();
+
+      makeStaffTable(staff);
    }
    
 };
 
 function makeStaffTable(staff) {
+
    let staffTable = document.createElement("table");
    let headerRow = document.createElement("tr");
+    
    
 
+
+
+
+
+
+
+
+
+   containerBox.appendChild(staffTable);
 }
