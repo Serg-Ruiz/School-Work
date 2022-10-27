@@ -1,4 +1,3 @@
-#pragma once
 #include <string>
 using namespace std;
 class Employee
@@ -6,12 +5,13 @@ class Employee
     private:
         string empName;
         int empId;
-
+        
     public: 
-    Employee(string param, int param2);
-    void setEmpName(string param);
-    string getEmpName();
-    void setEmpName(int param);
-    int getEmpId();
+        Employee(string param_Name, int param_empId);
+        void setEmpName(string param);
+        string getEmpName();
+        void setEmpId(int param);
+        int getEmpId();
 
 };
+
