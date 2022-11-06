@@ -1,3 +1,4 @@
+
 article 
 {
     width: 80%;
@@ -78,14 +79,14 @@ article
     
  }
  
- fieldset input[type="text"] 
+ fieldset input[type="text"]
  {
     float: left;
     width: 200px;
     margin: 0 0 25px 0;
  }
  
- input[type="submit"] 
+ input[type="submit"]
  {
     display: block;
     width: 120px;
@@ -110,4 +111,9 @@ article
  input[type="text"]:invalid 
  {
     background-color: rgba(255, 0, 0, 0.3);
+ }
+
+ .leftDiv
+ {
+   float: right;
  }
