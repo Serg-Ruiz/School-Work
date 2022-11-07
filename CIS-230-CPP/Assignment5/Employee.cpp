@@ -6,9 +6,9 @@ Employee::Employee(string param_Name, int param_empId)
     setEmpId(param_empId);
 }
 
-void Employee::setEmpName(string param_name)
+void Employee::setEmpName(string param)
 {
-    empName = param_name;
+    param = empName;
 }
 
 string Employee::getEmpName()
@@ -16,12 +16,43 @@ string Employee::getEmpName()
     return empName;
 }
 
-void Employee::setEmpId(int param_int)
+void Employee::setEmpId(int param)
 {
-    empId = param_int;
+    param = empId;
 }
 
 int Employee::getEmpId()
 {
     return empId;
+}
+
+string Employee::to_string()
+{
+
+}
+
+istream& Employee::getInput(istream&)
+{
+
+}
+
+double Employee::getWages()
+{
+
+
+
+}
+
+ostream& operator<<(ostream& my_cout, const Employee& param)
+{
+
+
+
+}
+istream& operator >> (istream& my_cin, const Employee& param)
+{
+
+
+
+
 }
