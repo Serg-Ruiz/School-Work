@@ -84,5 +84,5 @@ ostream& operator<<(ostream& my_cout, const Hourly_Worker& param)
 }
 istream& operator >> (istream& my_cin, const Hourly_Worker& param)
 {
-
+    
 }

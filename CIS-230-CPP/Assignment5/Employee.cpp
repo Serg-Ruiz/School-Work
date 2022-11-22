@@ -28,7 +28,7 @@ int Employee::getEmpId()
 
 string Employee::to_string()
 {
-
+    
 }
 
 istream& Employee::getInput(istream&)
@@ -38,15 +38,13 @@ istream& Employee::getInput(istream&)
 
 double Employee::getWages()
 {
-
-
-
+    
 }
 
 ostream& operator<<(ostream& my_cout, const Employee& param)
 {
 
-
+   
 
 }
 istream& operator >> (istream& my_cin, const Employee& param)

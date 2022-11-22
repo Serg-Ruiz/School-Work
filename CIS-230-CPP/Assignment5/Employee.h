@@ -1,7 +1,9 @@
 using namespace std;
 
-#include <string>
-#include <iostream>
+#include<iostream>
+#include <iomanip>
+#include <sstream>
+#pragma once
 
 class Employee
 {
@@ -11,7 +13,6 @@ class Employee
         int empId;
         
     public: 
-
         Employee(string param_Name, int param_empId);
         void setEmpName(string param);
         string getEmpName();
