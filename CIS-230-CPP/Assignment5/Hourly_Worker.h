@@ -1,4 +1,5 @@
 #include "Employee.h"
+
 class Hourly_Worker : public Employee
 {
     private:

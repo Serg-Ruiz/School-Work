@@ -1,5 +1,4 @@
 #include "Hourly_Worker.h"
-#include <string>
 using namespace std;
 
 Hourly_Worker::Hourly_Worker(string _name, int _empId, int _hours, double _Rate)
