@@ -1,17 +1,16 @@
 #include "Salaried_Worker.h"
 
 Salaried_Worker::Salaried_Worker(string _name, int _id, double _salary)
+    :Employee(_name, _id)
 {
     setEmpName(_name);
     setEmpId(_id);
     salary = _salary;
-
 }
 
 void Salaried_Worker::setSalary(double _salary)
 {
     salary = _salary;
-
 }
 
 double Salaried_Worker::getSalary()
@@ -31,14 +30,14 @@ istream& Salaried_Worker::getInput(istream&)
 
 double Salaried_Worker::getWages()
 {
-
+    return getSalary();
 }
 
 ostream& operator<<(ostream& my_cout, const Salaried_Worker& param)
 {
-
+    
 }
 istream& operator >> (istream& my_cin, const Salaried_Worker& param)
 {
-
+    
 }

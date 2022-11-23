@@ -2,6 +2,7 @@
 using namespace std;
 
 Hourly_Worker::Hourly_Worker(string _name, int _empId, int _hours, double _Rate)
+    :Employee(_name, _empId)
 {
     setEmpName(_name);
     setEmpId(_empId);
@@ -63,7 +64,7 @@ double Hourly_Worker::getRegularWages()
     return getHourlyRate() * getHours();
 }
 
-string Employee::to_string()
+string Hourly_Worker::to_string()
 {
 
 }
@@ -75,7 +76,7 @@ istream& Hourly_Worker::getInput(istream&)
 
 double Hourly_Worker::getWages()
 {
-
+    return getRegularWages() + getOTWages();
 }
 
 ostream& operator<<(ostream& my_cout, const Hourly_Worker& param)
