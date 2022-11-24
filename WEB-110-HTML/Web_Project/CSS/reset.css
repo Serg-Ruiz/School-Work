@@ -55,7 +55,14 @@ a:hover
   background: #0004e6;
   transition: .5s;
 }
-
+table
+{
+  background-color: white;
+}
+caption
+{
+  background-color: white;
+}
 .checkbtn
 {
   font-size: 30px;
@@ -70,6 +77,7 @@ a:hover
 {
   display: none;
 }
+
 @media (max-width: 952px)
 {
   label.logo
