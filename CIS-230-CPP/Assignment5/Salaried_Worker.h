@@ -7,9 +7,10 @@ class Salaried_Worker : public Employee
         Salaried_Worker(string _name, int _id, double _salary);
         void setSalary(double _salary);
         double getSalary();
-        istream& getInput(istream& my_cin);
-        string to_string();
-        double getWages();
+
+        virtual istream& getInput(istream& my_cin);
+        virtual string to_string();
+        virtual double getWages();
 
         friend ostream& operator << (ostream& my_cout,const Salaried_Worker& param);
         friend istream& operator >> (istream& my_cin, const Salaried_Worker& param);

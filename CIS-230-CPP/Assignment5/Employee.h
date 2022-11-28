@@ -19,9 +19,9 @@ class Employee
         void setEmpId(int param);
         int getEmpId();
 
-        virtual string to_string();
-        virtual istream& getInput(istream&);
-        virtual double getWages();
+        virtual string to_string() = 0;
+        virtual istream& getInput(istream&) = 0;
+        virtual double getWages() = 0;
 
         friend ostream& operator << (ostream& my_cout,const Employee& param);
         friend istream& operator >> (istream& my_cin, const Employee& param);

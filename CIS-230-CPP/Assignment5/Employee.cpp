@@ -26,16 +26,6 @@ int Employee::getEmpId()
     return empId;
 }
 
-istream& Employee::getInput(istream&)
-{
-
-}
-
-double Employee::getWages()
-{
-    
-}
-
 ostream& operator<<(ostream& my_cout, const Employee& param)
 {
     my_cout << param.to_string();
