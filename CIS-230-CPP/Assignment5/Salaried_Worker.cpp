@@ -42,28 +42,29 @@ double Salaried_Worker::getSalary()
 
 string Salaried_Worker::to_string()
 {
-    string Salaried =  getEmpName() + "(" + getEmpId + "), Salary (Wages) = " + getSalary();
+    ostringstream ostr;
 
-        return;
+    ostr << "(" << getEmpName() << ")," << " Salary (Wages) = $" << getWages();
+
+    return ostr.str();
 }
 
-istream& Salaried_Worker::getInput(istream&)
+istream& Salaried_Worker::getInput(istream& my_cin)
 {   
     string name;
     int id;
-    double salary;
-
+    int salary;
     cout << "Enter Name:";
-    cin >> name;
+    my_cin >> name;
     setEmpName(name);
-    cout << "Enter Id";
-    cin >> id;
+    cout << "\nEnter ID:";
+    my_cin >> id;
     setEmpId(id);
-    cout << "Enter Salary";
-    cin >> salary;
+    cout << "\nEnter Salary:";
+    my_cin >> salary;
     setSalary(salary);
 
-    return;
+    return my_cin;
 
 }
 
@@ -72,16 +73,13 @@ double Salaried_Worker::getWages()
     return getSalary();
 }
 
-ostream& operator<<(ostream& my_cout, const Salaried_Worker& param)
+ostream& operator<<(ostream& my_cout,Salaried_Worker& param)
 {
     my_cout << param.to_string();
+
     return my_cout;
 }
-istream& operator >> (istream& my_cin, const Salaried_Worker& param)
+istream& operator >> (istream& my_cin,Salaried_Worker& param)
 {
-    my_cin >> param.empName;
-    my_cin >> param.empId;
-    my_cin >> param.salary;
-
-    return my_cin;
+    return param.getInput(my_cin);
 }

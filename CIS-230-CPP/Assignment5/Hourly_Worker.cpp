@@ -66,38 +66,38 @@ double Hourly_Worker::getRegularWages()
 
 string Hourly_Worker::to_string()
 {
-    string Hourly = getEmpName() + "(" + getEmpId() + ")\n" + "Hours = " + getHours()
-        + "\nOT hours = " + getOTHours() + "\nHourly Rate = $" + getHourlyRate()
-        + "\nRegular Wages = $" + getRegularWages() + "\nOT Wages = $" + getOTWages() +
-        "\nTotal Wages = $" + getWages();
+    ostringstream ostr;
 
-    return Hourly;
+    ostr << "maya (" << getEmpId() << ")\nHours = " << getHours() <<
+        "\nOT Hours = " << getOTHours() << "\nHourly Rate = $" << getHourlyRate()
+        << "\nRegular Wages = $" << getRegularWages() << "\nOT Wages = $" << getOTWages()
+        << "Total Wages = $" << getWages();
+
+    return ostr.str();
 }
 
-istream& Hourly_Worker::getInput(istream&)
+istream& Hourly_Worker::getInput(istream& my_cin)
 {
     string name;
     int id;
     int hours;
-    double rate;
+    double hourly_rate;
 
     cout << "Enter Name:";
-    cin >> name;
+    my_cin >> name;
     setEmpName(name);
-
-    cout << "Enter ID:";
-    cin >> id;
+    cout << "\nEnter ID:";
+    my_cin >> id;
     setEmpId(id);
-
-    cout << "Enter hours (0-60)";
-    cin >> hours;
+    cout << "\nEnter Hours:";
+    my_cin >> hours;
     setHours(hours);
+    cout << "\nEnter Hourly Rate (0.01- 60.00) :";
+    my_cin >> hourly_rate;
+    setHourlyRate(hourly_rate);
 
-    cout << "Enter Hourly Rate (0.01 - 60.00)";
-    cin >> rate;
-    setHourlyRate(rate);
-
-    return;
+    return my_cin;
+    
 }
 
 double Hourly_Worker::getWages()
@@ -105,16 +105,13 @@ double Hourly_Worker::getWages()
     return getRegularWages() + getOTWages();
 }
 
-ostream& operator<<(ostream& my_cout, const Hourly_Worker& param)
+ostream& operator<<(ostream& my_cout,Hourly_Worker& param)
 {
     my_cout << param.to_string();
+
     return my_cout;
 }
-istream& operator >> (istream& my_cin, const Hourly_Worker& param)
+istream& operator >> (istream& my_cin,Hourly_Worker& param)
 {
-    my_cin >> param.empName;
-    my_cin >> param.empId;
-    my_cin >> param.hours;
-    my_cin >> param.hourlyRate;
-    return my_cin;
+    return param.getInput(my_cin);
 }

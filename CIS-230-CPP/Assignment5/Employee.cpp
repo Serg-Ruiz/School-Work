@@ -25,18 +25,3 @@ int Employee::getEmpId()
 {
     return empId;
 }
-
-ostream& operator<<(ostream& my_cout, const Employee& param)
-{
-    my_cout << param.to_string();
-    
-    return my_cout;
-
-}
-istream& operator >> (istream& my_cin, const Employee& param)
-{
-    my_cin >> param.empName;
-    my_cin >> param.empId;
-
-    return my_cin;
-}

@@ -18,11 +18,11 @@ class Hourly_Worker : public Employee
         double getOTWages();
         double getRegularWages();
 
-        virtual string to_string();
+        virtual string to_string() ;
         virtual istream& getInput(istream&);
         virtual double getWages();
 
-        friend ostream& operator << (ostream& my_cout,const Hourly_Worker& param);
-        friend istream& operator >> (istream& my_cin, const Hourly_Worker& param);
+        friend ostream& operator << (ostream& my_cout,Hourly_Worker& param);
+        friend istream& operator >> (istream& my_cin,Hourly_Worker& param);
             
 };
