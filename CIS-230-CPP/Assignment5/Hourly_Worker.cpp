@@ -1,35 +1,24 @@
 #include "Hourly_Worker.h"
-using namespace std;
-
-Hourly_Worker::Hourly_Worker(string _name, int _empId, int _hours, double _Rate)
-    :Employee(_name, _empId)
+#include <sstream>
+Hourly_Worker::Hourly_Worker(string name, int id, int h, double rate) : Employee(name, id)
 {
-    setEmpName(_name);
-    setEmpId(_empId);
-    setHours(_hours);
-    setHourlyRate(_Rate);
+    hours = h;
+    hourlyRate = rate;
 }
 
- void Hourly_Worker::setHours(int _hours)
- {
-    if (_hours > 40)
-    {
-        hours = 40;
-    }
-    else
-    {
-        _hours = hours;
-    }
- }
-
- int Hourly_Worker::getHours()
- {
-    return hours + getOTHours();
- }
-
-void Hourly_Worker::setHourlyRate(double _hourlyRate)
+void Hourly_Worker::setHours(int h)
 {
-    hourlyRate = _hourlyRate;
+    hours = h;
+}
+
+int Hourly_Worker::getHours()
+{
+    return hours;
+}
+
+void Hourly_Worker::setHourlyRate(double rate)
+{
+    hourlyRate = rate;
 }
 
 double Hourly_Worker::getHourlyRate()
@@ -39,79 +28,75 @@ double Hourly_Worker::getHourlyRate()
 
 int Hourly_Worker::getOTHours()
 {
-    int otHours;
-
-    if (getHours() > 40)
+    int otHours = 0;
+    if (hours > 40)
     {
-        otHours = getHours() - 40;
-    }
-    else
-    {
-        otHours = 0;
+        otHours = hours - 40;
     }
     return otHours;
 }
 
 double Hourly_Worker::getOTWages()
 {
-    double otPay = getHourlyRate() * 1.5;
-
-    return otPay * getOTHours();
+    int otHours = getOTHours();
+    return otHours * hourlyRate * 1.5;
 }
 
 double Hourly_Worker::getRegularWages()
 {
-    return getHourlyRate() * getHours();
+    return hours * hourlyRate;
+}
+
+ostream& operator<<(ostream& os,Hourly_Worker& worker)
+{
+    os << worker.to_string();
+
+    return os;
+}
+
+istream& operator>>(istream& is, Hourly_Worker& worker)
+{
+    string name;
+    int id;
+    int hours;
+    double hourlyp;
+
+    is >> name >> id >> hours >> hourlyp;
+
+    worker.setEmpName(name);
+    worker.setEmpId(id);
+    worker.setHours(hours);
+    worker.setHourlyRate(hourlyp);
+
+    return is;
 }
 
 string Hourly_Worker::to_string()
 {
     ostringstream ostr;
 
-    ostr << "maya (" << getEmpId() << ")\nHours = " << getHours() <<
-        "\nOT Hours = " << getOTHours() << "\nHourly Rate = $" << getHourlyRate()
-        << "\nRegular Wages = $" << getRegularWages() << "\nOT Wages = $" << getOTWages()
-        << "Total Wages = $" << getWages();
-
+    ostr << getEmpName() << "(" << getEmpId() << ")\n" << "Hours\t=\t"
+        << getHours() << "\nOT hours\t=\t" << getOTHours() << "\nHourly Rate\t=$" <<
+        getHourlyRate() << "\nRegular Wages\t=$\t" << getRegularWages() << "\nOT Wages \t=$\t"
+        << getOTWages() << "\nTotal Wages\t=$\t" << getWages();
+    
     return ostr.str();
 }
 
-istream& Hourly_Worker::getInput(istream& my_cin)
+void Hourly_Worker::getInput() 
 {
     string name;
     int id;
-    int hours;
-    double hourly_rate;
 
-    cout << "Enter Name:";
-    my_cin >> name;
+    cout << "Enter Name:\n";
+    cin >> name;
     setEmpName(name);
-    cout << "\nEnter ID:";
-    my_cin >> id;
+    cout << "Enter ID: \n";
+    cin >> id;
     setEmpId(id);
-    cout << "\nEnter Hours:";
-    my_cin >> hours;
-    setHours(hours);
-    cout << "\nEnter Hourly Rate (0.01- 60.00) :";
-    my_cin >> hourly_rate;
-    setHourlyRate(hourly_rate);
-
-    return my_cin;
-    
-}
-
-double Hourly_Worker::getWages()
-{
-    return getRegularWages() + getOTWages();
-}
-
-ostream& operator<<(ostream& my_cout,Hourly_Worker& param)
-{
-    my_cout << param.to_string();
-
-    return my_cout;
-}
-istream& operator >> (istream& my_cin,Hourly_Worker& param)
-{
-    return param.getInput(my_cin);
+    cout << "Eneter Hours (0-60): ";
+    cin >> hours;
+    cout << "Enter Hourly Rate (0.01 - 60.00) :";
+    cin >> hourlyRate;
+    return;
 }

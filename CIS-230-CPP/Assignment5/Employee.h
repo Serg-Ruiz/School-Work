@@ -1,28 +1,33 @@
-using namespace std;
+#include <iostream>
+#include <string>
 
-#include<iostream>
-#include <iomanip>
-#include <sstream>
-#pragma once
+#ifndef EMPLOYEE_H
+#define EMPLOYEE_H
+
+
+
+
+using namespace std;
 
 class Employee
 {
-    private:
+private:
+    string empName;
+    int empId;
 
-        string empName;
-        int empId;
-        
-    public: 
-        Employee(string param_Name, int param_empId);
-        void setEmpName(string param);
-        string getEmpName();
-        void setEmpId(int param);
-        int getEmpId();
+public:
+    Employee(string name, int id);
+    void setEmpName(string name);
+    string getEmpName();
+    void setEmpId(int id);
+    int getEmpId();
 
-        virtual string to_string() = 0;
-        virtual istream& getInput(istream&) = 0;
-        virtual double getWages() = 0;
+    friend ostream& operator<<(ostream& os, const Employee& emp);
+    friend istream& operator>>(istream& is, Employee& emp);
 
-        friend ostream& operator << (ostream& my_cout,const Employee& param);
-        friend istream& operator >> (istream& my_cin, const Employee& param);
+    virtual string to_string() = 0;
+    virtual void getInput() = 0;
+    virtual double getWages() = 0;
 };
+
+#endif

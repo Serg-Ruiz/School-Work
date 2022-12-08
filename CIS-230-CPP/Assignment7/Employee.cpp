@@ -35,5 +35,5 @@ string Employee::to_string()
 
 ostream& operator << (ostream& my_cout, const Employee& obj)
 {
-	
+	 b 
 }

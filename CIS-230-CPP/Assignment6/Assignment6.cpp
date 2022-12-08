@@ -17,5 +17,3 @@ int main()
 	cout << "test_obj3 details\n" << test_obj3 << endl;
 	return 0;
 }
-
-

@@ -1,19 +1,19 @@
 #include "Employee.h"
+
 class Salaried_Worker : public Employee
 {
-    private:
-        double salary;
-    public:
-        Salaried_Worker(string _name, int _id, double _salary);
-        void setSalary(double _salary);
-        double getSalary();
+private:
+    double salary;
 
-        virtual istream& getInput(istream& my_cin);
-        virtual string to_string();
-        virtual double getWages();
+public:
+    void setSalary(double sal);
+    double getSalary();
+    Salaried_Worker(string name, int id, double sal);
 
-        friend ostream& operator << (ostream& my_cout,Salaried_Worker& param);
-        friend istream& operator >> (istream& my_cin,Salaried_Worker& param);
+    friend ostream& operator<<(ostream& os, Salaried_Worker& worker);
+    friend istream& operator>>(istream& is, Salaried_Worker& worker);
 
+    string to_string() override;
+    void getInput() override;
+    double getWages() override;
 };
- 

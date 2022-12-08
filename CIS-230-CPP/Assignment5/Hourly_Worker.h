@@ -2,27 +2,25 @@
 
 class Hourly_Worker : public Employee
 {
-    private:
-    
-        int hours;
-        double hourlyRate;
-            
-    public:
+private:
+    int hours;
+    double hourlyRate;
 
-        Hourly_Worker(string _name, int _empId, int _hours, double _Rate);
-        void setHours(int _hours);
-        int getHours();
-        void setHourlyRate(double _hourlyRate);
-        double getHourlyRate();
-        int getOTHours();
-        double getOTWages();
-        double getRegularWages();
+public:
+    void setHours(int h);
+    int getHours();
+    void setHourlyRate(double rate);
+    double getHourlyRate();
+    int getOTHours();
+    double getOTWages();
+    double getRegularWages();
+    Hourly_Worker(string name, int id, int h, double rate);
 
-        virtual string to_string() ;
-        virtual istream& getInput(istream&);
-        virtual double getWages();
 
-        friend ostream& operator << (ostream& my_cout,Hourly_Worker& param);
-        friend istream& operator >> (istream& my_cin,Hourly_Worker& param);
-            
+    friend ostream& operator<<(ostream& os, Hourly_Worker& worker);
+    friend istream& operator>>(istream& is, Hourly_Worker& worker);
+
+    string to_string() override;
+    void getInput() override;
+    double getWages() override;
 };

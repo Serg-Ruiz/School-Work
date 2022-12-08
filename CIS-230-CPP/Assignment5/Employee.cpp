@@ -1,14 +1,13 @@
 #include "Employee.h"
-
-Employee::Employee(string param_Name, int param_empId)
+Employee::Employee(string name, int id)
 {
-    setEmpName(param_Name);
-    setEmpId(param_empId);
+    empName = name;
+    empId = id;
 }
 
-void Employee::setEmpName(string param)
+void Employee::setEmpName(string name)
 {
-    param = empName;
+    empName = name;
 }
 
 string Employee::getEmpName()
@@ -16,12 +15,24 @@ string Employee::getEmpName()
     return empName;
 }
 
-void Employee::setEmpId(int param)
+void Employee::setEmpId(int id)
 {
-    param = empId;
+    empId = id;
 }
 
 int Employee::getEmpId()
 {
     return empId;
+}
+
+ostream& operator<<(ostream& os, const Employee& emp)
+{
+    os << emp.empName << " " << emp.empId;
+    return os;
+}
+
+istream& operator>>(istream& is, Employee& emp)
+{
+    is >> emp.empName >> emp.empId;
+    return is;
 }
