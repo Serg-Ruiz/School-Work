@@ -7,6 +7,8 @@ int main()
 {
 	int arr_int[] = { 456  , 789, 145, 986, 367 };
 
+	string test;
+
 	string arr_str[] = { "pam" , "maya", "dave", "john", "tim" };
 
 	Linked_List_Employees my_employees;
