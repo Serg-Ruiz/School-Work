@@ -1,0 +1,5 @@
+cis115 	Python
+cis120	VB.NET
+cis130 	C++
+cis150	Java
+cis186 	GameMaker
